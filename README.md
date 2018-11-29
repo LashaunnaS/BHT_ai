@@ -1,6 +1,6 @@
 # BHT_ai
 
-<-- Requirements-->>
+<-- Requirements-->
 Implement a webpage with 2 textboxes that can only accept integers, and a submit button. When the submit button is pressed, write out to the webpage the number of “3”s that appear in all the numbers between the two inputs (inclusive), and all the numbers that contain a “3”.
 
 <-- Examples -->
