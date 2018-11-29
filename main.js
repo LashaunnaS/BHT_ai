@@ -14,6 +14,11 @@ const getUserRange = () => {
 
     numRange.push(range1) && numRange.push(range2);
 
+    /* 
+    By default all non-undefined elements get converted to strings then compared based on UTF-16 code units.
+    However, if a compareFunction is supplied, all non-undefined array elements are sorted according to the 
+    return value of the compare function.
+    */
     numRange.sort((a, b) => a - b);
 
     fillInArray();
@@ -60,3 +65,4 @@ const getTotallThrees = () => {
 
     document.getElementById('sumOfThrees').innerHTML = `There are ${totalThrees} 3's`;
 }
+
