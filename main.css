@@ -2,6 +2,7 @@
 body{
     background: linear-gradient(to bottom, #fec79c, #e26bbe, #91acfb) no-repeat;
     height: 100vh;
+    min-height: 500px;
     color: #1e3264;
     font-family: 'Montserrat';
     font-weight: 500;
