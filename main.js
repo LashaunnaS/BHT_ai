@@ -14,9 +14,9 @@ const getUserRange = () => {
 
     numRange.push(range1) && numRange.push(range2);
 
-    /* 
+    /*
     By default all non-undefined elements get converted to strings then compared based on UTF-16 code units.
-    However, if a compareFunction is supplied, all non-undefined array elements are sorted according to the 
+    However, if a compareFunction is supplied, all non-undefined array elements are sorted according to the
     return value of the compare function.
     */
     numRange.sort((a, b) => a - b);
@@ -51,12 +51,12 @@ const fillInArray = () => {
         document.getElementById('summaryOfThreesArr').innerHTML = `Sorry, no lucky numbers in this range. Click reset to try again!` :
         document.getElementById('summaryOfThreesArr').innerHTML = `Your lucky numbers are: ${threesList}`;
 
-    getTotallThrees()
+    getTotalThrees()
 }
 
 
-// Get a sum total of all #3's within the range 
-const getTotallThrees = () => {
+// Get a sum total of all #3's within the range
+const getTotalThrees = () => {
     let x = threesList.toString().replace(/,/gi, "");
 
     x.split('').map(num => {
